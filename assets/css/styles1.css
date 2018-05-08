@@ -1,0 +1,183 @@
+* {
+	font-family: esteban, Times, serif; 
+}
+
+.background {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	min-width: 100%;
+	min-height: 100%;
+	/*background-color: #584c3f;*/
+	background: radial-gradient(#584c3f, #0a173d);
+}
+
+.crystal1{
+	position: fixed;
+	left: -110px;
+	bottom: -20px;
+	width: 10%;
+
+	-webkit-transition: width 15s;
+}
+
+.crystal1:hover {
+
+	animation: grow 30s;
+	animation-iteration-count: 1;
+	width: 40%;
+}
+
+.crystal2{
+	position: fixed;
+	left: 190px;
+	top: -20px;
+	width: 5%;
+
+	-webkit-transform: rotate(180deg);
+
+	-webkit-transition: width 17s;
+}
+
+.crystal2:hover {
+
+	animation: grow 30s;
+	animation-iteration-count: 1;
+	width: 30%;
+}
+
+/*@keyframes grow {
+	0% { width: 1%; }
+	50% { width: 15%; }
+	100% {width: 30%;}
+}*/
+
+.crystal3{
+	position: fixed;
+	right: -55px;
+	top: -60px;
+	width: 10%;
+
+	-webkit-transform: rotate(240deg);
+
+	-webkit-transition: width 20s;
+}
+
+.crystal3:hover {
+
+	animation: grow 10s;
+	animation-iteration-count: 1;
+	width: 50%;
+}
+
+.crystal4{
+	position: fixed;
+	left: 790px;
+	bottom: -20px;
+	width: 10%;
+
+	-webkit-transition: width 30s;
+}
+
+.crystal4:hover {
+
+	animation: grow 25s;
+	animation-iteration-count: 1;
+	width: 50%;
+}
+
+
+.S2{
+	position: fixed;
+	left: 30px;
+	top: 90px;
+	font-size: 35px;
+	color: #e0d64e;
+	letter-spacing: 3px;
+
+/*	animation-duration: 23s;
+	animation-name: runnin;
+	animation-iteration-count: 1;*/
+}
+
+/*@keyframes runnin {
+	from { left: -40%; }
+	to {left: 110%; }
+}*/
+
+.S1{
+	position: fixed;
+	left: 700px;
+	top: 250px;
+	font-size: 35px;
+	color: #e0d64e;
+	letter-spacing: 3px;
+
+}
+
+.S3{
+	position: fixed;
+	left: 500px;
+	top: 350px;
+	font-size: 35px;
+	color: #e0d64e;
+	letter-spacing: 3px;
+
+}
+
+.S4{
+	position: fixed;
+	left: 900px;
+	top: 550px;
+	font-size: 35px;
+	color: #e0d64e;
+	letter-spacing: 3px;
+
+}
+
+
+
+.hide { display: none; }
+
+.opacity {opacity: 0}
+
+@font-face {
+	font-family: alegreya;
+	src: url(../font/Alegreya/Alegreya-Regular.ttf);
+}
+
+@font-face {
+	font-family: esteban;
+	src: url(../font/Esteban/Esteban-Regular.ttf);
+}
+
+
+.running {
+	animation-duration: 23s;
+	animation-name: runnin;
+	animation-iteration-count: 1;
+}
+
+@keyframes runnin {
+	from { left: -40%; }
+	to {left: 110%; }
+}
+
+
+.fade-out{
+	opacity: 1;
+	animation: fade 0.2s linear;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fade {
+	0% { opacity: 1}
+	100% {opacity: 0}
+
+}
+
+
+
+

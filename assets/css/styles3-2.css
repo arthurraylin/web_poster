@@ -1,0 +1,168 @@
+*{ 
+ font-family: sans-serif; 
+ /*border: 1px solid black;*/
+ margin: 0;
+
+ 
+}
+
+body{ 
+	background: linear-gradient(to bottom right, blue, #1aada6 60%);
+	 height: 1500px;
+}
+
+
+
+.segment{
+	height: 300px;
+}
+
+.s1{
+	position: absolute;
+	left: 1%;
+	top: 132%;
+}
+
+.s2{
+	position: absolute;
+	left: 61%;
+	top: 11%;
+}
+
+
+
+.s3{
+	position: absolute;
+	left: 12%;
+	top: 9%;
+}
+
+.s4{
+	position: absolute;
+	left: 52%;
+	top: 135%;
+}
+
+.s5{
+	position: absolute;
+	left: 26%;
+	top: 160%;
+}
+
+.s6{
+	position: absolute;
+	left: 1%;
+	top: 70%;
+}
+
+
+.s7{
+	position: absolute;
+	left: 16%;
+	top: 95%;
+}
+
+.s8{
+	position: absolute;
+	left: 80%;
+	top: 3%;
+}
+
+.s9{
+	position: absolute;
+	left: 60%;
+	top: 50%;
+}
+
+.s10{
+	position: absolute;
+	left: 48%;
+	top: 9%;
+}
+
+.s11{
+	position: absolute;
+	left: 50%;
+	top: 86%;
+}
+
+.s12{
+	position: absolute;
+	left: 68%;
+	top: 105%;
+}
+
+.s13{
+	position: absolute;
+	left: 80%;
+	top: 80%;
+}
+
+.s14{
+	position: absolute;
+	left: 78%;
+	top: 150%;
+}
+
+
+.s15{
+	position: absolute;
+	left: 31%;
+	top: 28%;
+}
+
+
+.s16{
+	position: absolute;
+	left: 12%;
+	top: 117%;
+}
+
+
+
+
+
+
+
+
+.cursor_move{
+	cursor: move;
+}
+
+.hide { display: none; }
+
+.opacity {opacity: 0}
+
+@font-face {
+	font-family: alegreya;
+	src: url(../font/Alegreya/Alegreya-Regular.ttf);
+}
+
+
+.running {
+	animation-duration: 23s;
+	animation-name: runnin;
+	animation-iteration-count: 1;
+}
+
+@keyframes runnin {
+	from { left: -40%; }
+	to {left: 110%; }
+}
+
+
+.fade-out{
+	opacity: 1;
+	animation: fade 0.2s linear;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fade {
+	0% { opacity: 1}
+	100% {opacity: 0}
+
+}
+
+
+
+

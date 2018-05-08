@@ -1,0 +1,272 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper_cloud{
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 750px;
+	background: radial-gradient(circle, transparent 10%, white 85%);
+}
+
+.poster1{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+}
+
+.poster2{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	z-index: -10;
+}
+
+.poster3{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	z-index: -10;
+}
+
+.poster4{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+}
+
+.poster5{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	z-index: -10;
+}
+.line{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 50;
+}
+
+.gem1{
+	position: absolute;
+	left: 690px;
+	top: 130px;
+	width: 6%;
+	z-index: 100;
+}
+
+.gem2{
+	position: absolute;
+	left: 880px;
+	top: 280px;
+	width: 6%;
+	z-index: 100;
+}
+
+.gem3{
+	position: absolute;
+	left: 820px;
+	top: 520px;
+	width: 6%;
+	z-index: 100;
+}
+
+.gem4{
+	position: absolute;
+	left: 560px;
+	top: 510px;
+	width: 6%;
+	z-index: 100;
+}
+
+.gem5{
+	position: absolute;
+	left: 495px;
+	top: 280px;
+	width: 5.5%;
+	z-index: 100;
+}
+
+/*.hexagon {
+  position: absolute;
+  left: 680px;
+  top: 350px;
+  width: 100px;
+  height: 55px;
+  background: #22a311;
+
+}
+.hexagon:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid #22a311;
+}
+.hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid #22a311;
+}
+
+.trapezoid_1 {
+	position: absolute;
+	left: 575px;
+	top: 354px;
+	border-bottom: 50px solid #93d88a;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	height: 0;
+	width: 60px;
+
+	transform: rotate(90deg);
+}
+
+.trapezoid_2 {
+	position: absolute;
+	left: 625px;
+	top: 275px;
+	border-bottom: 50px solid #93d88a;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	height: 0;
+	width: 60px;
+
+	transform: rotate(153deg);
+}
+
+.trapezoid_3 {
+	position: absolute;
+	left: 715px;
+	top: 275px;
+	border-bottom: 50px solid #93d88a;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	height: 0;
+	width: 60px;
+
+	transform: rotate(208deg);
+}
+
+.trapezoid_4 {
+	position: absolute;
+	left: 765px;
+	top: 354px;
+	border-bottom: 50px solid #93d88a;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	height: 0;
+	width: 60px;
+
+	transform: rotate(270deg);
+}
+
+.trapezoid_5 {
+	position: absolute;
+	left: 715px;
+	top: 430px;
+	border-bottom: 50px solid #93d88a;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	height: 0;
+	width: 60px;
+
+	transform: rotate(333deg);
+}
+
+.trapezoid_6 {
+	position: absolute;
+	left: 625px;
+	top: 430px;
+	border-bottom: 50px solid #93d88a;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	height: 0;
+	width: 60px;
+
+	transform: rotate(27deg);
+}*/
+
+.block {
+	position:absolute;
+	width: 200px;
+	height: 200px;
+	background-color: black;
+}
+
+
+
+
+.hide { display: none; }
+
+.opacity {opacity: 0}
+
+@font-face {
+	font-family: alegreya;
+	src: url(../font/Alegreya/Alegreya-Regular.ttf);
+}
+
+@font-face {
+	font-family: esteban;
+	src: url(../font/Esteban/Esteban-Regular.ttf);
+}
+
+
+.running {
+	animation-duration: 23s;
+	animation-name: runnin;
+	animation-iteration-count: 1;
+}
+
+@keyframes runnin {
+	from { left: -40%; }
+	to {left: 110%; }
+}
+
+
+.fade-out{
+	opacity: 1;
+	animation: fade 0.2s linear;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fade {
+	0% { opacity: 1}
+	100% {opacity: 0}
+
+}
+
+
+
+

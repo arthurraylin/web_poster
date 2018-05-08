@@ -1,0 +1,253 @@
+*{ 
+	font-family: sans-serif; 
+    /*border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+	/*border: 1px solid black;*/
+	background: #f4f4f4;
+}
+
+
+.green-curtain{
+	position: absolute;
+	right: 0;
+	width: 18%;
+	height: 212%;
+	z-index: 13;
+	background: linear-gradient(to left, #25e806, #3d6d00);
+
+}
+
+.green-curtain-active{
+	animation: slide-in 5s 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slide-in{
+	100% {width: 100%;}
+}
+
+.border {
+	position: relative;
+	width: 1300px;
+	height: 500px;
+	display: inline-block;
+	/*border: 1px dashed red;*/
+}
+
+.border .C_border1{
+	position: absolute;
+	width: 600px;
+	height: 188px;
+     
+    left: 370px;
+    bottom: 40px;
+	/*border: 1px dashed green;*/
+	overflow: hidden;
+
+}
+
+.border .C_border1 .G_gem_stick{
+	position: absolute;
+	left: -600px;
+
+}
+
+.G_growing{
+	animation: growing1 30s 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes growing1{
+	10% {left: -550px;}
+	20% {left: -550px;}
+	100% {left: 0px;}
+}
+
+.border .reen{
+	position: absolute;
+	left: 980px;
+	bottom: 50px;
+	font-size: 100px;
+	color: #f4f4f4;
+
+	z-index: 15;
+	text-decoration: underline dashed red;
+}
+
+
+
+.border .C_border2{
+	position: absolute;
+	width: 1100px;
+	height: 122px;
+     
+    left: 110px;
+    bottom: 80px;
+	/*border: 1px dashed green;*/
+	overflow: hidden;
+}
+
+.border .C_border2 .E_gem_stick{
+	position: absolute;
+	left: -1100px;
+
+}
+
+.E_growing{
+	animation: growing2 23s 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes growing2{
+	12% {left: -1040px;}
+	20% {left: -1040px;}
+	100% {left: 0px;}
+}
+
+.border .ye{
+	position: absolute;
+	left: 380px;
+	bottom: 200px;
+	font-size: 100px;
+	letter-spacing: 30px;
+	color: #f4f4f4;
+
+	z-index: 15;
+	text-decoration: underline dashed red;
+
+}
+
+
+.border .C_border3{
+	position: absolute;
+	width: 340px;
+	height: 355px;
+     
+    left: 400px;
+    bottom: 40px;
+	/*border: 1px dashed green;*/
+	overflow: hidden;
+}
+
+.border .C_border3 .M_gem_stick{
+	position: absolute;
+	left: -340px;
+
+}
+
+.M_growing{
+	animation: growing3 35s 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes growing3{
+	30% {left: -270px;}
+	40% {left: -270px;}
+	100% {left: 0px;}
+}
+
+.border .onster{
+	position: absolute;
+	left: 680px;
+	bottom: 164px;
+	font-size: 100px;
+	letter-spacing: 10px;
+	color: #f4f4f4;
+	transform: rotate(270deg);
+
+	z-index: 15;
+	text-decoration: underline dashed red;
+}
+
+
+
+.border .G{
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	font-size: 500px;
+	color: black;
+	/*border: 1px dotted blue;*/
+	cursor: pointer;
+}
+
+.border .E{
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	font-size: 500px;
+	color: black;
+	/*border: 1px dotted blue;*/
+	cursor: pointer;
+}
+
+.border .M{
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	font-size: 500px;
+	color: black;
+	/*border: 1px dotted blue;*/
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Z-top{ z-index: 1000; }
+
+
+.hide { display: none; }
+
+.opacity {opacity: 0}
+
+@font-face {
+	font-family: alegreya;
+	src: url(../font/Alegreya/Alegreya-Regular.ttf);
+}
+
+
+.running {
+	animation-duration: 23s;
+	animation-name: runnin;
+	animation-iteration-count: 1;
+}
+
+@keyframes runnin {
+	from { left: -40%; }
+	to {left: 110%; }
+}
+
+
+.fade-out{
+	opacity: 1;
+	animation: fade 0.2s linear;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fade {
+	0% { opacity: 1}
+	100% {opacity: 0}
+
+}
+
+
+
+

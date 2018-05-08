@@ -1,0 +1,434 @@
+*{ 
+	font-family: sans-serif;	
+	/*border: 1px dashed orange;*/
+ }
+
+body{
+ 	/*border: 1px solid red;*/
+ 	height: 1000px;
+ 	width: 100%;
+ 	/*background: black;*/
+
+}
+
+.crystal_1{
+	position: absolute;
+	left: 130px;
+	top: 480px;
+	width: 7%;
+	z-index: 5;
+}
+
+.crystal_2{
+	position: absolute;
+	left: 140px;
+	top: 380px;
+	width: 20%;
+	z-index: 4;
+}
+
+.crystal_3{
+	position: absolute;
+	left: 330px;
+	top: 460px;
+	width: 10%;
+	z-index: 5;
+}
+
+.crystal_4{
+	position: absolute;
+	left: 370px;
+	top: 460px;
+	width: 15%;
+	z-index: 5;
+}
+
+.crystal_5{
+	position: absolute;
+	left: 450px;
+	top: 340px;
+	width: 25%;
+	z-index: 0;
+	transform: rotate(10deg);
+}
+
+.crystal_6{
+	position: absolute;
+	left: 680px;
+	top: 460px;
+	width: 10%;
+	z-index: 0;
+}
+
+.crystal_7{
+	position: absolute;
+	left: 770px;
+	top: 450px;
+	width: 10%;
+	z-index: 0;
+}
+
+.crystal_8{
+	position: absolute;
+	left: 820px;
+	top: 420px;
+	width: 20%;
+	z-index: 0;
+}
+
+.crystal_9{
+	position: absolute;
+	left: 1000px;
+	top: 485px;
+	width: 7%;
+	z-index: 0;
+}
+
+.crystal_10{
+	position: absolute;
+	left: 1030px;
+	top: 360px;
+	width: 23%;
+	z-index: 0;
+}
+.outline{
+	position: absolute;
+	left: 30px;
+	top: 80px;
+	width: 100%;
+	z-index: 5;
+}
+
+
+.top-left{
+	position: absolute;
+	left: 190px;
+	top: 210px;
+	/*opacity: 0.8;*/
+
+	width: 240px;
+	height: 0;
+	border-bottom: 330px solid #d2d2d5;
+	border-left: 105px solid transparent;
+	z-index: 15;
+	transform: skew(-23deg);
+}
+
+.top-left-active{
+
+	animation: slide-top-left 12s 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slide-top-left{
+	5% {left: 190px; top: 200px;}
+	10% {left: 190px; top: 200px;}
+	50% {left: 0px; top: 200px;}
+	100% {left: -300px; top: -330px;}
+}
+
+.top-right{
+	position: absolute;
+	left: 895px;
+	top: 210px;
+	/*opacity: 0.8;*/
+
+	width: 240px;
+	height: 0;
+	border-bottom: 330px solid #272930;
+	border-right: 105px solid transparent;
+	z-index: 15;
+	transform: skew(23deg);
+}
+
+.top-right-active{
+
+	animation: slide-top-right 12s 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slide-top-right{
+	5% {left: 895px; top: 200px;}
+	10% {left: 895px; top: 200px;}
+	50% {left: 1089px; top: 200px;}
+	100% {left: 1389px; top: -330px;}
+}
+
+
+.top-mid{
+	position: absolute;
+	left: 465px;
+	top: 210px;
+	/*opacity: 0.8;*/
+
+	width: 220px;
+	height: 0;
+	border-bottom: 330px solid #6e7074;
+	border-left: 140px solid transparent;
+	border-right: 140px solid transparent;  
+	z-index: 14;
+}
+
+.top-mid-active{
+	animation: slide-top-mid 20s 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slide-top-mid{
+	5% {left: 465px; top: 200px;}
+	10% {left: 465px; top: 200px;}
+	100% {left: 465px; top: -330px;}
+}
+
+.invitation{
+	position: absolute;
+	left: 500px;
+	top:500px;
+	font-size: 110px;
+	text-align: center;
+	font-weight: lighter;
+	line-height: 35px;
+	color: #16e2d5;
+
+	cursor: pointer;
+}
+
+
+
+.midline{
+	position: absolute;
+	left: 115px;
+	top: 540px;
+	width: 1200px;
+	height: 60px;
+	z-index: 20;
+	background-color: #eacf00;
+	/*opacity: 0.8;*/
+
+	border: 1.4px solid green;
+
+	font-size: 50px;
+	/*color: #a59306;*/
+	text-align: center;
+	font-weight: lighter;
+	line-height: 36px;
+
+	cursor: pointer;
+
+	animation: gold 1s infinite;
+}
+
+@keyframes gold{
+	50% {background-color: #eacf00;}
+	50% {background-color: #ffe944;}
+	100% {background-color: #eddb53;}
+}
+
+
+* .names{
+	position: absolute;
+	left: 500px;
+	top: 680px;
+
+	font-size: 50px;
+	font-family: tangerine-regular;
+
+}
+
+* .engagement{
+	position: absolute;
+	left: 560px;
+	top: 770px;
+
+	font-size: 60px;
+	font-family: tangerine-bold;
+}
+
+* .content{
+	position: absolute;
+	left: 480px;
+	top: 860px;
+
+	font-size: 30px;
+	letter-spacing: 2px;
+	line-height: 40px;
+	font-family: tangerine-bold;
+
+}
+.bottom-mid, .bottom-mid-stay{
+	position: absolute;
+	left: 465px;
+	top: 600px;
+	/*opacity: 0.8;*/
+
+	width: 0;
+	height: 0;
+	border-top: 730px solid #3a3b40;
+	border-left: 250px solid transparent;
+	border-right: 250px solid transparent;  
+	z-index: 18;
+}
+
+.bottom-mid-active{
+	animation: slide-bottom-mid 20s 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slide-bottom-mid{
+	5% {left: 465px; top: 610px;}
+	10% {left: 465px; top: 610px;}
+	90% {left: 465px; top: 1500px;}
+	100% {left: -600px; top: 1800px;}
+}
+
+
+.bottom-left, .bottom-left-stay{
+	position: absolute;
+	left: 250px;
+	top: 600px;
+	/*opacity: 0.8;*/
+
+	width: 0;
+	height: 0;
+	border-top: 730px solid #a0a0a2;
+	border-left: 340px solid transparent;
+/*	border-right: 50px solid orange; */ 
+	z-index: 15;
+
+	transform: skew(19deg);
+}
+
+.bottom-left-active{
+
+	animation: slide-bottom-left 12s 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slide-bottom-left{
+	5% {left: 250px; top: 610px;}
+	10% {left: 250px; top: 610px;}
+	50% {left: 190px; top: 610px;}
+	100% {left: -500px; top: 750px;}
+}
+
+.bottom-right, .bottom-right-stay{
+	position: absolute;
+	left: 840px;
+	top: 600px;
+	/*opacity: 0.8;*/
+
+	width: 0;
+	height: 0;
+	border-top: 730px solid #15171c;
+	border-right: 340px solid transparent;
+/*	border-right: 50px solid orange; */ 
+	z-index: 15;
+
+	transform: skew(-19deg);
+}
+
+.bottom-right-active{
+	animation: slide-bottom-right 12s 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slide-bottom-right{
+	5% {left: 840px; top: 610px;}
+	10% {left: 840px; top: 610px;}
+	50% {left: 900px; top: 610px;}
+	100% {left: 1590px; top: 750px;}
+}
+
+
+.bottom-right-stay, .bottom-left-stay, .bottom-mid-stay{ opacity: 0.3;}
+
+
+
+/*.message{
+	position: fixed;
+	font-size: 80px;
+	color: black;
+	line-height: 120px;
+	font-weight: bold;
+}
+
+
+.line1{
+	top: 50px;
+	left: 20px;
+}
+
+.line2{
+	top: 210px;
+	left: 140px;
+}
+
+.line3{
+	top: 370px;
+	left: 790px;
+}
+
+.line4{
+	top: 530px;
+	left: 60px;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hide { display: none; }
+
+.opacity {opacity: 0}
+
+@font-face {
+	font-family: alegreya;
+	src: url(../font/Alegreya/Alegreya-Regular.ttf);
+}
+
+@font-face {
+	font-family: tangerine-regular;
+	src: url(../font/Tangerine/Tangerine-Regular.ttf);
+}
+
+@font-face {
+	font-family: tangerine-bold;
+	src: url(../font/Tangerine/Tangerine-Bold.ttf);
+}
+.running {
+	animation-duration: 23s;
+	animation-name: runnin;
+	animation-iteration-count: 1;
+}
+
+@keyframes runnin {
+	from { left: -40%; }
+	to {left: 110%; }
+}
+
+
+.fade-out{
+	opacity: 1;
+	animation: fade 0.2s linear;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fade {
+	0% { opacity: 1}
+	100% {opacity: 0}
+
+}
+
+
+
+
